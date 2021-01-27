@@ -1,0 +1,90 @@
+\documentclass{article}
+\usepackage{amsmath}
+\usepackage{tikz}
+\usepackage{pgfplots}
+\usetikzlibrary{calc,angles,positioning,intersections,quotes,decorations.markings}
+%\usepackage{tkz-euclide}% this needed for markings on trianlges with red markings
+\usetikzlibrary{shapes,shapes.multipart}
+\thispagestyle{empty}
+\begin{document}
+\title{ASSIGNMENT 08}
+\author{Muneeb Ahmad Sheikh}
+\date{\today}
+\maketitle
+
+\begin{itemize}
+\item{\textbf{Question 2.44:}}\\
+
+\textit{Construct TRUE with $ 
+TR=3.5, RU=3, UE=4, {\angle}R=75^{\circ}, {\angle}U=120^{\circ}.$}\\
+
+\item{\textbf{Solution:}\\
+
+$
+
+Given,TR=3.5, RU=3, UE=4, {\angle}R=75^{\circ} , {\angle}U=120^{\circ}.$\\
+
+Now,\\
+
+\textit{Steps of Construction.}\\
+$
+
+1: Draw a line TR=3.5 cm.\\
+
+2: From point R, draw another line RU=3 cm such that {\angle}TRU=75^{\circ}.\\
+
+3: From point U, draw  a line UE=4 cm such that {\angle}RUE=120^{\circ}.\\
+
+4: Join ET and we get required quad TRUE.\\
+$
+
+\begin{center}
+\begin{tikzpicture}
+\path (0,0)coordinate(T) -- (3.5,0)coordinate(R) -- (2.723,2.8977)coordinate(U) -- (-1.140,3.933)coordinate(E);
+\draw (T) -- (R) -- (U) -- (E) -- cycle;
+\node at (-0.3,-0.3){$T$};
+\node at (3.6,-0.3){$R$};
+\node at (2.8,3.2){$U$};
+\node at (-1.2,4.2){$E$};
+\end{tikzpicture}
+\end{center}\\
+
+
+\item{\textbf{Question 2.46:}}\\
+
+\textit{Construct a Square READ with  with $ RE=5.1$.}\\
+
+\item{\textbf{Solution:}\\
+
+$
+
+Given, RE=5.1$\\
+
+Now,\\
+
+\textit{Steps of Construction.}
+
+$
+
+1: Draw a line RE=5.1 cm.\\
+
+2: From point E, draw another line EA=5.1 cm such that {\angle}REA=90^{\circ}.\\
+
+3: From point A, draw  a line AD=5.1 cm such that {\angle}EAD=90^{\circ}.\\
+
+4: Join DR and we get required Square READ.\\
+$
+
+\begin{center}
+\begin{tikzpicture}
+\path[thick,red] (0,0)coordinate(R) -- (5.1,0)coordinate(E) -- (5.1,5.1)coordinate(A) -- (0,5.1)coordinate(D);
+\draw (R) -- (E) -- (A) -- (D) -- cycle;
+\node at (-0.3,-0.3){$R$};
+\node at (5.2,-0.3){$E$};
+\node at (5.2,5.4){$A$};
+\node at (0,5.4){$D$};
+\end{tikzpicture}
+\end{center}
+
+\end{itemize}
+\end{document}
